@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AURA Pro — Premium Wireless Headphones</title>
+  <meta name="description"
+    content="AURA Pro wireless headphones. Active noise cancellation, 50-hour battery, Hi-Res audio. Order now, pay on delivery.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet">
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+  <!-- ============ PRELOADER ============ -->
+  <div id="preloader">
+    <div class="loader-ring"></div>
+    <span class="loader-word">AURA</span>
+  </div>
+
+  <!-- ============ NAVBAR ============ -->
+  <nav class="navbar navbar-expand-lg fixed-top" id="mainNavbar">
+    <div class="container">
+      <a class="navbar-brand" href="#home">
+        <span class="brand-mark">A</span>URA<span class="brand-suffix">.</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav mx-auto gap-lg-2">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="#specs">Specifications</a></li>
+          <li class="nav-item"><a class="nav-link" href="#reviews">Reviews</a></li>
+          <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+        <a href="#checkout" class="btn btn-cta d-none d-lg-inline-flex">Buy Now</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============ HERO ============ -->
+  <section id="home" class="hero">
+    <div class="hero-blob blob-1"></div>
+    <div class="hero-blob blob-2"></div>
+    <div class="container">
+      <div class="row align-items-center gy-5">
+        <div class="col-lg-6 order-2 order-lg-1">
+          <span class="badge-pill reveal-up">New · 2nd Generation</span>
+          <h1 class="hero-title reveal-up" style="--d:0.05s">Hear every<br>detail, <span
+              class="text-gradient">unfiltered.</span></h1>
+          <p class="hero-desc reveal-up" style="--d:0.1s">
+            AURA Pro pairs studio-grade Hi-Res drivers with adaptive noise cancellation
+            in a featherlight, foldable frame built for a full workday of sound.
+          </p>
+
+          <div class="hero-rating reveal-up" style="--d:0.15s">
+            <span class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i></span>
+            <span class="rating-value">4.8</span>
+            <span class="rating-count">(2,340 reviews)</span>
+          </div>
+
+          <div class="hero-price reveal-up" style="--d:0.2s">
+            <span class="price-now">Rs. 9,999</span>
+            <span class="price-old">Rs. 16,999</span>
+            <span class="price-off">-41%</span>
+          </div>
+
+          <div class="reveal-up" style="--d:0.25s">
+            <label class="option-label">Color</label>
+            <div class="color-swatches" id="colorSwatches">
+              <button type="button" class="swatch active" data-color="Midnight Black" style="--swatch-color:#111827"
+                aria-label="Midnight Black"></button>
+              <button type="button" class="swatch" data-color="Arctic White" style="--swatch-color:#F3F4F6"
+                aria-label="Arctic White"></button>
+              <button type="button" class="swatch" data-color="Teal Wave" style="--swatch-color:#18C7B8"
+                aria-label="Teal Wave"></button>
+              <button type="button" class="swatch" data-color="Sky Blue" style="--swatch-color:#38BDF8"
+                aria-label="Sky Blue"></button>
+            </div>
+            <span class="selected-color-label">Midnight Black</span>
+          </div>
+
+          <div class="d-flex flex-wrap align-items-center gap-3 mt-4 reveal-up" style="--d:0.3s">
+            <label class="option-label mb-0 me-1">Qty</label>
+            <div class="qty-selector" data-qty-group="hero">
+              <button type="button" class="qty-btn" data-action="dec">−</button>
+              <span class="qty-value" data-qty-value>1</span>
+              <button type="button" class="qty-btn" data-action="inc">+</button>
+            </div>
+            <a href="#checkout" class="btn btn-cta btn-ripple">Buy Now</a>
+            <button type="button" class="btn btn-outline-cta btn-ripple" id="addToCartBtn">
+              <i class="bi bi-bag-plus"></i> Add to Cart
+            </button>
+          </div>
+
+          <div class="hero-trust reveal-up" style="--d:0.35s">
+            <div><i class="bi bi-truck"></i> Fast Delivery</div>
+            <div><i class="bi bi-arrow-repeat"></i> 7-Day Returns</div>
+            <div><i class="bi bi-shield-check"></i> 1-Year Warranty</div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 order-1 order-lg-2">
+          <div class="hero-visual">
+            <div class="glass-card floating-card card-top reveal-scale" style="--d:0.2s">
+              <i class="bi bi-battery-full"></i>
+              <div><strong>50 Hrs</strong><span>Battery Life</span></div>
+            </div>
+            <img src="assets/images/headphone-hero.svg" alt="AURA Pro wireless headphones" class="hero-img floating-img"
+              id="parallaxImg">
+            <div class="glass-card floating-card card-bottom reveal-scale" style="--d:0.3s">
+              <i class="bi bi-soundwave"></i>
+              <div><strong>ANC</strong><span>Active Noise Cancel</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ STATS STRIP ============ -->
+  <section class="stats-strip">
+    <div class="container">
+      <div class="row text-center gy-4">
+        <div class="col-6 col-md-3">
+          <div class="stat-number" data-count="50">0</div>
+          <div class="stat-label">Hours Battery</div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="stat-number" data-count="40">0</div>
+          <div class="stat-label">mm Drivers</div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="stat-number" data-count="12000">0</div>
+          <div class="stat-label">Happy Customers</div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="stat-number" data-count="98">0</div>
+          <div class="stat-label">% Satisfaction</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FEATURES ============ -->
+  <section id="features" class="section-pad">
+    <div class="container">
+      <div class="section-head reveal-up">
+        <span class="eyebrow">Why AURA Pro</span>
+        <h2>Engineered for sound purists</h2>
+        <p>Every element, from driver to hinge, is tuned for comfort and clarity.</p>
+      </div>
+      <div class="row g-4" id="featuresGrid">
+        <!-- injected by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GALLERY ============ -->
+  <section id="gallery" class="section-pad section-tint">
+    <div class="container">
+      <div class="section-head reveal-up">
+        <span class="eyebrow">Gallery</span>
+        <h2>Every angle, perfected</h2>
+        <p>A closer look at the details that make AURA Pro feel premium in hand.</p>
+      </div>
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-7">
+          <div class="gallery-main glass-card reveal-scale">
+            <img src="assets/images/headphone-hero.svg" alt="AURA Pro main view" id="galleryMainImg">
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="gallery-thumbs reveal-up">
+            <button class="thumb active" data-label="Front View"><img src="assets/images/headphone-hero.svg"
+                alt="Front view thumbnail"></button>
+            <button class="thumb" data-label="Side Profile"><img src="assets/images/headphone-hero.svg"
+                alt="Side profile thumbnail"></button>
+            <button class="thumb" data-label="Folded Design"><img src="assets/images/headphone-hero.svg"
+                alt="Folded design thumbnail"></button>
+            <button class="thumb" data-label="Ear Cushion Detail"><img src="assets/images/headphone-hero.svg"
+                alt="Ear cushion detail thumbnail"></button>
+          </div>
+          <p class="gallery-caption mt-3" id="galleryCaption">Front View — plush memory-foam cushions with a
+            matte-finish headband.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SPECIFICATIONS ============ -->
+  <section id="specs" class="section-pad">
+    <div class="container">
+      <div class="section-head reveal-up">
+        <span class="eyebrow">Specifications</span>
+        <h2>The details behind the sound</h2>
+      </div>
+      <div class="row g-4" id="specsGrid">
+        <!-- injected by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ REVIEWS ============ -->
+  <section id="reviews" class="section-pad section-tint">
+    <div class="container">
+      <div class="section-head reveal-up">
+        <span class="eyebrow">Customer Reviews</span>
+        <h2>Loved by thousands of listeners</h2>
+      </div>
+      <div class="review-track-wrap reveal-up">
+        <div class="review-track" id="reviewTrack">
+          <!-- injected by JS, duplicated for seamless loop -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PRICING ============ -->
+  <section class="section-pad">
+    <div class="container">
+      <div class="pricing-card glass-card reveal-scale">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-7">
+            <span class="eyebrow">Limited-Time Offer</span>
+            <h2>Get AURA Pro at its lowest price</h2>
+            <p class="text-light-2">Offer ends when the timer runs out — free delivery included on every order.</p>
+            <div class="countdown" id="countdown">
+              <div class="cd-box"><span id="cd-h">00</span><small>Hours</small></div>
+              <div class="cd-box"><span id="cd-m">00</span><small>Mins</small></div>
+              <div class="cd-box"><span id="cd-s">00</span><small>Secs</small></div>
+            </div>
+          </div>
+          <div class="col-lg-5 text-lg-end">
+            <div class="pricing-numbers">
+              <span class="price-old-lg">Rs. 16,999</span>
+              <span class="price-now-lg">Rs. 9,999</span>
+              <span class="save-badge">You save Rs. 7,000</span>
+            </div>
+            <a href="#checkout" class="btn btn-cta btn-lg btn-ripple mt-3">Buy Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq" class="section-pad section-tint">
+    <div class="container">
+      <div class="section-head reveal-up">
+        <span class="eyebrow">FAQ</span>
+        <h2>Questions, answered</h2>
+      </div>
+      <div class="accordion faq-accordion reveal-up" id="faqAccordion">
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+              Is Cash on Delivery available?
+            </button>
+          </h3>
+          <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">Yes, we offer Cash on Delivery across all supported cities. You can also confirm
+              your order details over WhatsApp before it ships.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+              How long does delivery take?
+            </button>
+          </h3>
+          <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">Orders within major cities typically arrive in 2–4 business days. Remote areas
+              may take slightly longer.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+              What's covered under warranty?
+            </button>
+          </h3>
+          <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">AURA Pro includes a 1-year manufacturer warranty covering hardware defects,
+              battery performance, and driver faults under normal use.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+              Can I return the headphones if I don't like them?
+            </button>
+          </h3>
+          <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">Absolutely. We offer a 7-day, no-questions-asked return window from the date of
+              delivery, provided the item is unused and in original packaging.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+              How do I place an order?
+            </button>
+          </h3>
+          <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">Fill in the checkout form below and tap "Place Order." Your order summary will
+              open in WhatsApp, ready for you to send — no account needed.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CHECKOUT ============ -->
+  <section id="checkout" class="section-pad">
+    <div class="container">
+      <div class="section-head reveal-up">
+        <span class="eyebrow">Checkout</span>
+        <h2>Complete your order</h2>
+        <p>Fill in your details — we'll open WhatsApp with your order ready to send.</p>
+      </div>
+
+      <div class="row g-4">
+        <!-- FORM -->
+        <div class="col-lg-7">
+          <form id="checkoutForm" class="glass-card checkout-card reveal-up" novalidate>
+            <h3 class="checkout-subhead"><i class="bi bi-person"></i> Customer Details</h3>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label class="form-label">Full Name *</label>
+                <input type="text" class="form-control" id="custName" required>
+                <div class="invalid-feedback">Please enter your full name.</div>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label">Phone Number *</label>
+                <input type="tel" class="form-control" id="custPhone" placeholder="03XXXXXXXXX" required>
+                <div class="invalid-feedback">Please enter a valid phone number.</div>
+              </div>
+              <div class="col-12">
+                <label class="form-label">Email (Optional)</label>
+                <input type="email" class="form-control" id="custEmail">
+              </div>
+            </div>
+
+            <h3 class="checkout-subhead mt-4"><i class="bi bi-geo-alt"></i> Delivery Address</h3>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label class="form-label">House Number *</label>
+                <input type="text" class="form-control" id="addrHouse" required>
+                <div class="invalid-feedback">Required.</div>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label">Street *</label>
+                <input type="text" class="form-control" id="addrStreet" required>
+                <div class="invalid-feedback">Required.</div>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label">Area *</label>
+                <input type="text" class="form-control" id="addrArea" required>
+                <div class="invalid-feedback">Required.</div>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label">City *</label>
+                <input type="text" class="form-control" id="addrCity" required>
+                <div class="invalid-feedback">Required.</div>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label">Province *</label>
+                <select class="form-select" id="addrProvince" required>
+                  <option value="">Select Province</option>
+                  <option>Sindh</option>
+                  <option>Punjab</option>
+                  <option>Khyber Pakhtunkhwa</option>
+                  <option>Balochistan</option>
+                  <option>Gilgit-Baltistan</option>
+                  <option>Islamabad Capital Territory</option>
+                </select>
+                <div class="invalid-feedback">Please select a province.</div>
+              </div>
+            </div>
+
+            <h3 class="checkout-subhead mt-4"><i class="bi bi-pin-map"></i> Location</h3>
+            <div class="location-row">
+              <button type="button" class="btn btn-outline-cta btn-ripple" id="shareLocationBtn">
+                <i class="bi bi-crosshair"></i> Share Current Location
+              </button>
+              <span class="location-status" id="locationStatus"></span>
+            </div>
+            <label class="form-label mt-3">Or paste Google Maps link</label>
+            <input type="url" class="form-control" id="mapsLink" placeholder="https://maps.google.com/...">
+
+            <h3 class="checkout-subhead mt-4"><i class="bi bi-box-seam"></i> Product Options</h3>
+            <div class="row g-3 align-items-end">
+              <div class="col-md-6">
+                <label class="form-label">Color</label>
+                <select class="form-select" id="checkoutColor">
+                  <option>Midnight Black</option>
+                  <option>Arctic White</option>
+                  <option>Teal Wave</option>
+                  <option>Sky Blue</option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label d-block">Quantity</label>
+                <div class="qty-selector" data-qty-group="checkout">
+                  <button type="button" class="qty-btn" data-action="dec">−</button>
+                  <span class="qty-value" data-qty-value>1</span>
+                  <button type="button" class="qty-btn" data-action="inc">+</button>
+                </div>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-cta btn-lg w-100 mt-4 btn-ripple" id="placeOrderBtn">
+              <i class="bi bi-whatsapp"></i> Place Order via WhatsApp
+            </button>
+          </form>
+        </div>
+
+        <!-- ORDER SUMMARY -->
+        <div class="col-lg-5">
+          <div class="glass-card order-summary-card reveal-up sticky-summary" style="--d:0.1s">
+            <h3 class="checkout-subhead"><i class="bi bi-receipt"></i> Order Summary</h3>
+            <div class="summary-product">
+              <img src="assets/images/headphone-hero.svg" alt="AURA Pro">
+              <div>
+                <strong>AURA Pro Wireless Headphones</strong>
+                <span id="summaryColor">Midnight Black</span>
+              </div>
+            </div>
+            <ul class="summary-list">
+              <li><span>Unit Price</span><span id="summaryUnitPrice">Rs. 9,999</span></li>
+              <li><span>Quantity</span><span id="summaryQty">1</span></li>
+              <li><span>Subtotal</span><span id="summarySubtotal">Rs. 9,999</span></li>
+              <li><span>Delivery Charges</span><span id="summaryDelivery">Rs. 250</span></li>
+              <li><span>Discount</span><span id="summaryDiscount" class="text-accent">− Rs. 7,000</span></li>
+            </ul>
+            <div class="summary-total">
+              <span>Grand Total</span>
+              <span id="summaryTotal">Rs. 10,249</span>
+            </div>
+            <p class="summary-note"><i class="bi bi-shield-check"></i> Secure order · Pay on delivery available</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ NEWSLETTER ============ -->
+  <section class="newsletter-section">
+    <div class="container">
+      <div class="glass-card newsletter-card reveal-up">
+        <div>
+          <h3>Stay in the loop</h3>
+          <p>New drops, early offers, and sound tips — no spam.</p>
+        </div>
+        <form class="newsletter-form" id="newsletterForm">
+          <input type="email" class="form-control" placeholder="you@email.com" required>
+          <button type="submit" class="btn btn-cta btn-ripple">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer id="contact" class="footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <a class="navbar-brand text-white" href="#home"><span class="brand-mark">A</span>URA<span
+              class="brand-suffix">.</span></a>
+          <p class="footer-text mt-3">Premium wireless sound, designed for people who listen closely.</p>
+          <div class="social-icons">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-twitter-x"></i></a>
+            <a href="#"><i class="bi bi-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-6">
+          <h4>Shop</h4>
+          <ul>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#specs">Specifications</a></li>
+            <li><a href="#checkout">Buy Now</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-6">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#">Track Order</a></li>
+            <li><a href="#">Returns</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4">
+          <h4>Contact</h4>
+          <ul>
+            <li><i class="bi bi-telephone"></i> +92 300 1234567</li>
+            <li><i class="bi bi-envelope"></i> hello@aurapro.example</li>
+            <li><i class="bi bi-geo-alt"></i> Karachi, Pakistan</li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <div class="footer-bottom">
+        <span>&copy; 2026 AURA Pro. All rights reserved.</span>
+        <span>Designed for people who love sound.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============ FLOATING BUTTONS ============ -->
+  <a href="https://wa.me/923001234567" target="_blank" rel="noopener" class="floating-whatsapp"
+    aria-label="Chat on WhatsApp">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+  <button type="button" class="scroll-top" id="scrollTopBtn" aria-label="Scroll to top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+  <div class="sticky-mobile-cta d-lg-none">
+    <div>
+      <span class="sticky-price">Rs. 9,999</span>
+      <span class="sticky-old">Rs. 16,999</span>
+    </div>
+    <a href="#checkout" class="btn btn-cta btn-ripple">Buy Now</a>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/checkout.js"></script>
+</body>
+
+</html>

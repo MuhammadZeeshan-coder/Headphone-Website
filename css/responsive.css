@@ -1,0 +1,42 @@
+/* ==========================================================================
+   AURA Pro — Responsive
+   ========================================================================== */
+
+@media (max-width: 991.98px) {
+  .hero { padding: 130px 0 80px; min-height: auto; }
+  .hero-visual { min-height: 320px; margin-bottom: 20px; }
+  .hero-img { max-width: 320px; }
+  .card-top { top: 4%; left: 0; }
+  .card-bottom { bottom: 2%; right: 0; }
+  .section-pad { padding: 70px 0; }
+  .sticky-summary { position: static; }
+  body { padding-bottom: 72px; } /* space for sticky mobile CTA */
+  .navbar-collapse {
+    background: #fff; border-radius: var(--radius-md); margin-top: 12px;
+    padding: 18px; box-shadow: var(--shadow-lux);
+  }
+}
+
+@media (min-width: 992px) {
+  .sticky-mobile-cta { display: none !important; }
+}
+
+@media (max-width: 767.98px) {
+  .hero-title { font-size: 2.1rem; }
+  .gallery-thumbs { grid-template-columns: repeat(4, 1fr); }
+  .pricing-card { padding: 30px 22px; text-align: center; }
+  .pricing-numbers { text-align: center !important; }
+  .countdown { justify-content: center; }
+  .newsletter-card { flex-direction: column; text-align: center; }
+  .newsletter-form { justify-content: center; width: 100%; }
+  .newsletter-form .form-control { min-width: 0; flex: 1; }
+  .footer-bottom { flex-direction: column; text-align: center; }
+  .floating-whatsapp { width: 50px; height: 50px; font-size: 22px; bottom: 90px; }
+  .scroll-top { bottom: 90px; }
+}
+
+@media (max-width: 575.98px) {
+  .hero-price { flex-wrap: wrap; }
+  .checkout-card, .order-summary-card { padding: 24px 18px; }
+  .stat-number { font-size: 1.7rem; }
+}
