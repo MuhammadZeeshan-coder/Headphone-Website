@@ -5,7 +5,7 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
-  const WHATSAPP_NUMBER = '03103696838'; // Replace with your business WhatsApp number
+  const WHATSAPP_NUMBER = '+92 310 3696838'; // Replace with your business WhatsApp number
 
   const PRODUCT = {
     name: 'AURA Pro Wireless Headphones',
